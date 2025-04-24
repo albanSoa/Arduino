@@ -14,7 +14,7 @@ void setup() {
   lcd.begin(16, 2);
   lcd.print("Initialisation...");
 
-  // Réveil du MPU6050
+  // Activation du MPU6050
   Wire.beginTransmission(MPU_ADDR);
   Wire.write(0x6B); // Registre PWR_MGMT_1
   Wire.write(0);    // Réveil
@@ -54,5 +54,5 @@ void loop() {
   lcd.print(roll, 1);
   lcd.print(" deg ");
 
-  delay(300); // pour éviter de spammer l'écran
+  delay(300); // Delai de 300ms pour avoir des informations lisibles sur l'écran
 }
