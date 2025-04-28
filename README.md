@@ -57,6 +57,3 @@ Ces librairies sont **incluses d'origine** avec l'IDE Arduino.
 - Le MPU6050 est utilisé à son adresse I2C par défaut `0x68`.
 
 ---
-
-## 📸 Aperçu d'affichage
-
